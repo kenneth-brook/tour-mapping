@@ -1,3 +1,7 @@
+import React from "react";
+import { Link, Route, Switch } from "react-router-dom";
+
+import Nav from "./components/nav/Nav";
 
 function App() {
   return (
@@ -6,6 +10,7 @@ function App() {
         <header>
           <h1>My Tour App</h1>
         </header>
+        <Nav />
       </div>
     </div>
   );
