@@ -2,7 +2,7 @@ import React from "react";
 
 function Attractions() {
     return (
-        <div>
+        <div className="attractionsWrap">
             <h1>attractions</h1>
         </div>
     )

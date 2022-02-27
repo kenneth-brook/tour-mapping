@@ -1,7 +1,12 @@
-import React from "react";
-import { Route, NavLink, Routes } from "react-router-dom";
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 import Attractions from "../attractions/Attractions";
+import Stay from "../stay/Stay";
 
 function Nav() {
     return (
@@ -14,12 +19,20 @@ function Nav() {
                             Attractions
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink className="link" to="./stay" activeClassName="active">
+                            Where to Stay
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div className="bodyWrap">
                 <Routes>
-                    <Route exact path="/" component={Attractions} />
+                    <Route path="/" component={<Attractions />}>
+                
+                    <Route path="./stay" component={<Stay />} />
+                    </Route>
                 </Routes>
             </div>
         </div>
