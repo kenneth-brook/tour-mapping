@@ -1,11 +1,12 @@
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <div className="phoneWindow">
+        <header>
+          <h1>My Tour App</h1>
+        </header>
+      </div>
     </div>
   );
 }
