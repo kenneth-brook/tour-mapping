@@ -1,36 +1,35 @@
 .navWrap {
     width: 100%;
-    flex: 1;
-	margin-bottom: 35px;
 
     .navLinks {
 		width: 100%;
-		background-color: black;
+		background-color: antiquewhite;
 		border-bottom: 2px solid #cccccc;
-		margin-bottom: 30px;
 
         nav {
             ul {
                 display: flex;
+                justify-content: space-between;
 				flex-wrap: wrap;
-				justify-content: center;
-				padding: 35px 0;
-				text-align: center;
                 list-style-type: none;
+                padding: 0;
 
-                .link {
-					color: white;
-					font-size: 1rem;
+                li {
+                    width: 44.4%;
+					font-size: 1.2rem;
+                    font-weight: bolder;
 					text-decoration: none;
-					padding: 0 15px;
-					border-left: 2px solid white;
+                    padding: 10px;
+                    background-color: antiquewhite;
+                    border-top: 1px solid black;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
 				}
 
-				li:first-child .link {
-					border-left: none;
-				}
-
-				.link:hover {
+				a:hover {
 					text-shadow: 0px 4px 12px rgb(252, 95, 55);
 				}
 

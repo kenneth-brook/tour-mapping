@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import './sass-main/index.scss';
 import App from './App';
 
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  rootElement
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
