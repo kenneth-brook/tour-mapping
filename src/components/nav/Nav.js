@@ -5,6 +5,7 @@ import Attractions from "../attractions/Attractions";
 import Stay from "../stay/Stay";
 import Shop from "../shop/Shop";
 import Eat from "../eat/Eat";
+import FullPage from "../fullpage/FullPage";
 
 function Nav() {
     return (
@@ -15,6 +16,7 @@ function Nav() {
                     <Route path="stay" element={<Stay />} />
                     <Route path="shop" element={<Shop />} />
                     <Route path="eat" element={<Eat />} />
+                    <Route path="location/:id" element={<FullPage />} />
                     </Route>
                 </Routes>
             </div>

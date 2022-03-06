@@ -14,6 +14,7 @@ function Attractions() {
                 return (
                   <DisplayCard
                   key={card.id}
+                  id={card.id}
                   name={card.name}
                   street={card.street}
                   city={card.city}
