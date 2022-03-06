@@ -1,7 +1,14 @@
 .attractionsWrap {
     font-size: 1.2rem;
+    text-align: center;
     
-    h1 {
+    h3 {
       color: white;
+    }
+
+    .attractionCardWrap {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
 }

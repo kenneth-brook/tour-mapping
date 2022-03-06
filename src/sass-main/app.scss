@@ -16,10 +16,11 @@ body {
   
   .phoneWindow {
     width: 360px;
-    height: 640px;
+    height: auto;
     background-color: black;
     border: 6px solid white;
     border-radius: 15px;
+    overflow: hidden;
   
     header {
       margin: 0;
